@@ -16,6 +16,13 @@
     // Show 'My Scores'
     const myScoresSelector = '.gwt-Label.My_Scores';
     waitForKeyElements(myScoresSelector, () => {
+        // Show 'My Scores'
         $(myScoresSelector).click();
+
+        // Remove ads
+        $('#enthusiast_ad_leaderboard_btf').remove();
+        $('#enthusiast_ad_leaderboard_atf').remove();
+        $('#enthusiast_ad_sidebar_west').remove();
+        $('#enthusiast_ad_sidebar_east_1').remove();
     });
 })();
